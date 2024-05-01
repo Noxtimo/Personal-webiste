@@ -1,5 +1,11 @@
+import Fragment from "../components/Fragment";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Fragment />
+    </>
+  );
 };
 
 export default Home;
