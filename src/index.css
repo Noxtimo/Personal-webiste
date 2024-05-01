@@ -43,16 +43,17 @@ li{
 }
 
 
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10rem;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html{
+  height: 100%;
 }
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .footer-content{
   display: flex;
@@ -79,8 +80,78 @@ footer{
   color: white;
 }
 
-.fragment{
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#content-wrap {
+  padding-bottom: 100rem;   /* Change this value for the size of the content inside */
+
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  height: 10rem;
   background-color: black;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;          /* Footer height */
+}
+
+.square{
+  width: 100%;
+  height: 50rem;
+}
+
+
+.first-square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-square h1{
+  font-size: 50px;
+}
+
+.second-square h1{
+  font-size: 50px;
+}
+
+.second-square{
+  background-color: rgb(174, 255, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.second-square h1{
+  margin-bottom: 50px;
+}
+
+.reactLogo{
+  width: 250px;
+  height: 200px;
+}
+.firebase{
+  width: 250;
+  height: 200px;
+}
+.css{
+  width: 250px;
+  height: 200px;
+}
+
+.logo-div{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
